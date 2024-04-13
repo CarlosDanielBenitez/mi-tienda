@@ -1,9 +1,9 @@
-.navbar {
+/* .navbar {
+} */
 
+.titleHambContent {
+  display: flex;
 
-  border: 0px 0px 1px 0px;
-
-  background-color: #ffffff;
 }
 .navbar h1 {
   font-size: 32px;
@@ -13,76 +13,75 @@
   letter-spacing: 0.1em;
   text-align: left;
   color: #0f1e7b;
-  margin-left: 1rem;
+   padding-left: 1rem;
 }
 .menu-icon {
-    height: 81px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #000000;
+  height: 84px;
+ width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
 }
-.menu-icon.closed {
-    border-bottom: none; /* eliminará el borde cuando la clase "closed" esté presente */
-}
+
 .menu-icon .hamburger-react {
-    /* Estilos predeterminados */
+  /* Estilos predeterminados */
 }
 
 .menu-icon .hamburger-react.active {
-    /* Estilos cuando el menú está activo */
-    width: 24px;
-    height: 24px;
-    top: 12px;
-    right: 0; /* Ajusta el menú al lado derecho */
-    transform: translateX(0); /* Asegura que el menú esté completamente visible */
-    gap: 0px;
-    opacity: 1; /* Asegura que el menú esté completamente visible */
+  /* Estilos cuando el menú está activo */
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  right: 0; /* Ajusta el menú al lado derecho */
+  transform: translateX(0); /* Asegura que el menú esté completamente visible */
+  gap: 0px;
+  opacity: 1; /* Asegura que el menú esté completamente visible */
 }
 
 .nav-links.open {
-    height: 100vh;
-    width: 100vw;
-    display: block; /* Muestra el menú de navegación cuando la clase open está presente */
+  border-top: 1px solid #000000;
+  height: 100vh;
+  width: 100vw;
+  display: block; /* Muestra el menú de navegación cuando la clase open está presente */
 }
 
 /*! menu de secciones */
 .nav-links {
-    display: none; /* Oculta el menú de navegación por defecto */
+  display: none; /* Oculta el menú de navegación por defecto */
 }
 .nav-links li {
-    font-family: Roboto;
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
   border-bottom: 0.65px solid #000000;
   margin: 1rem;
-  padding-bottom: .7rem;
+  padding-bottom: 0.7rem;
   list-style: none;
 }
-.nav-links li:last-child{
-    border: none;
+.nav-links li:last-child {
+  border: none;
 }
 .nav-links li a {
-    text-decoration: none;
-    color: #5e5e5e;
+  text-decoration: none;
+  color: #5e5e5e;
 }
 
-.ofertasContainer{
-    display: flex;
-    align-items: center;
-
+.ofertasContainer {
+  display: flex;
+  align-items: center;
 }
-#ofertas{
-    color: #DC1E0F;
-    border: none;
-}
-
-.ofertasContainer img{
-    width: 18px;
+#ofertas {
+  color: #dc1e0f;
+  border: none;
+  margin-right: 5px;
 }
 
+.ofertasContainer img {
+  width: 18px;
+}
 
 /* En el archivo NavBar.css */
 
@@ -95,52 +94,49 @@
 }
 
 .headerGlobal {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-right: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-right: 0.5rem;
 }
 
 .headerGlobalIcons {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
 /*? NAVBAR DESKTOP */
 /* Estilos para NavBarLargeScreen */
 .navbar-large {
-    display: none; /* Por defecto, se oculta en pantallas pequeñas */
-  }
-  
-  /* Estilos para pantallas grandes (768px o más) */
-  @media (min-width: 768px) {
-    .navbar-large {
-      display: flex; /* Muestra el NavBar en pantallas grandes */
+  display: none; /* Por defecto, se oculta en pantallas pequeñas */
+}
 
-      justify-content: flex-end;
-    }
-  
-    .nav-links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    .nav-links li {
-      margin-right: 20px;
-    }
-  
-    .ofertasContainer img {
-      width: 20px;
-      height: 20px;
-      margin-left: 5px;
-    }
+/* Estilos para pantallas grandes (768px o más) */
+@media (min-width: 768px) {
+  .navbar-large {
+    display: flex; /* Muestra el NavBar en pantallas grandes */
+
+    justify-content: flex-end;
   }
-  
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .ofertasContainer img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+}

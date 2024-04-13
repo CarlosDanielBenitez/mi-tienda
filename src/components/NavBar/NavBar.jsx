@@ -14,7 +14,9 @@ const NavBar = () => {
     <>
       <div className="headerGlobal">
         <nav className="navbar">
+
           {/* Menú hamburguesa */}
+          <div className="titleHambContent">
           <div className="menu-icon closed" onClick={toggleMenu}>
             {isOpen && <h1 className="store-title">Mi Tienda</h1>}
             <Hamburger
@@ -22,8 +24,11 @@ const NavBar = () => {
               direction="right"
               size={12}
               toggledColor="#000"
-            />
+              />
           </div>
+          </div>
+          
+          
           {/* Menú de navegación */}
           <ul className={`nav-links ${isOpen ? "open" : ""}`}>
             <li>
@@ -42,7 +47,7 @@ const NavBar = () => {
               <a id="ofertas" href="#ofertas">
                 Ofertas
               </a>
-              <img src="../../../public/images/fire-icon.png" alt="" />
+              <img src="../../../public/images/fire-icon.svg" alt="fire-icon" />
             </li>
           </ul>
         </nav>
@@ -52,7 +57,7 @@ const NavBar = () => {
           <div className="navigationCheckInAll">
             <h1 className="store-title">Mi Tienda</h1>
             <NavigationCheckIn />
-            <p className="iconsAll">cart</p>
+            <img src="../../../public/images/shopping-cart.svg" alt="shopping-cart" />
           </div>
         )}
       </div>

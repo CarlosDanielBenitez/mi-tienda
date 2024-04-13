@@ -18,7 +18,7 @@ const NavBarLargeScreen = () => {
         </li>
         <li className="ofertasContainer">
           <a id="ofertas" href="#ofertas">Ofertas</a>
-          <img src="../../../public/images/fire-icon.png" alt="" />
+          <img src="../../../public/images/fire-icon.svg" alt="fire-icon" />
         </li>
       </ul>
     </nav>

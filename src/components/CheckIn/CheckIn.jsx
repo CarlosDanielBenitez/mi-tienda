@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Button, TextField, Container, Typography } from '@mui/material';
+import React, { useState } from "react";
+import { Button, TextField, Container, Typography } from "@mui/material";
 
 const CheckIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isSignIn, setIsSignIn] = useState(true);
 
   const handleSubmit = (e) => {
@@ -11,10 +11,10 @@ const CheckIn = () => {
     // Aquí puedes agregar la lógica para el inicio de sesión o el registro
     if (isSignIn) {
       // Simulando inicio de sesión exitoso
-      console.log('Inicio de sesión exitoso con:', email, password);
+      console.log("Inicio de sesión exitoso con:", email, password);
     } else {
       // Simulando registro exitoso
-      console.log('Registro exitoso con:', email, password);
+      console.log("Registro exitoso con:", email, password);
     }
     // Redireccionar a otra página después de realizar la acción deseada
     // Puedes utilizar <Link> o history.push() aquí
@@ -24,7 +24,7 @@ const CheckIn = () => {
     <Container component="main" maxWidth="xs">
       <div>
         <Typography component="h1" variant="h5">
-          {isSignIn ? 'Iniciar sesión' : 'Crear cuenta'}
+          {isSignIn ? "Iniciar sesión" : "Crear cuenta"}
         </Typography>
         <form onSubmit={handleSubmit}>
           <TextField
@@ -53,13 +53,8 @@ const CheckIn = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-          >
-            {isSignIn ? 'Iniciar sesión' : 'Registrarse'}
+          <Button type="submit" fullWidth variant="contained" color="primary">
+            {isSignIn ? "Iniciar sesión" : "Registrarse"}
           </Button>
           <Button
             fullWidth
@@ -67,7 +62,9 @@ const CheckIn = () => {
             color="primary"
             onClick={() => setIsSignIn(!isSignIn)}
           >
-            {isSignIn ? 'Crear una cuenta' : '¿Ya tienes una cuenta? Iniciar sesión'}
+            {isSignIn
+              ? "Crear una cuenta"
+              : "¿Ya tienes una cuenta? Iniciar sesión"}
           </Button>
         </form>
       </div>
