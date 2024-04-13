@@ -1,0 +1,14 @@
+.iconsAll{
+    width: 18px;
+}
+.store-title {
+  color: #0f1e7b;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  white-space: nowrap; 
+}

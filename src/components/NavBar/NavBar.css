@@ -1,9 +1,8 @@
 .navbar {
-  width: 100%;
-  height: 100%;
+
 
   border: 0px 0px 1px 0px;
-  opacity: 0px;
+
   background-color: #ffffff;
 }
 .navbar h1 {
@@ -70,10 +69,78 @@
     color: #5e5e5e;
 }
 
+.ofertasContainer{
+    display: flex;
+    align-items: center;
 
+}
 #ofertas{
     color: #DC1E0F;
     border: none;
-
-
 }
+
+.ofertasContainer img{
+    width: 18px;
+}
+
+
+/* En el archivo NavBar.css */
+
+/* Estilos para pantallas pequeñas (menos de 768px) */
+@media (min-width: 768px) {
+  /* Oculta el menú de navegación por defecto */
+  .navbar {
+    display: none;
+  }
+}
+
+.headerGlobal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-right: .5rem;
+}
+
+.headerGlobalIcons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+
+
+/*? NAVBAR DESKTOP */
+/* Estilos para NavBarLargeScreen */
+.navbar-large {
+    display: none; /* Por defecto, se oculta en pantallas pequeñas */
+  }
+  
+  /* Estilos para pantallas grandes (768px o más) */
+  @media (min-width: 768px) {
+    .navbar-large {
+      display: flex; /* Muestra el NavBar en pantallas grandes */
+
+      justify-content: flex-end;
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nav-links li {
+      margin-right: 20px;
+    }
+  
+    .ofertasContainer img {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
+  
