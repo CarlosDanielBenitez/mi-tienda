@@ -1,0 +1,79 @@
+.navbar {
+  width: 100%;
+  height: 100%;
+
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  background-color: #ffffff;
+}
+.navbar h1 {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #0f1e7b;
+  margin-left: 1rem;
+}
+.menu-icon {
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
+.menu-icon.closed {
+    border-bottom: none; /* eliminará el borde cuando la clase "closed" esté presente */
+}
+.menu-icon .hamburger-react {
+    /* Estilos predeterminados */
+}
+
+.menu-icon .hamburger-react.active {
+    /* Estilos cuando el menú está activo */
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 0; /* Ajusta el menú al lado derecho */
+    transform: translateX(0); /* Asegura que el menú esté completamente visible */
+    gap: 0px;
+    opacity: 1; /* Asegura que el menú esté completamente visible */
+}
+
+.nav-links.open {
+    height: 100vh;
+    width: 100vw;
+    display: block; /* Muestra el menú de navegación cuando la clase open está presente */
+}
+
+/*! menu de secciones */
+.nav-links {
+    display: none; /* Oculta el menú de navegación por defecto */
+}
+.nav-links li {
+    font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  border-bottom: 0.65px solid #000000;
+  margin: 1rem;
+  padding-bottom: .7rem;
+  list-style: none;
+}
+.nav-links li:last-child{
+    border: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+
+#ofertas{
+    color: #DC1E0F;
+    border: none;
+
+
+}
