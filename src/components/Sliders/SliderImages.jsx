@@ -6,7 +6,7 @@ const SliderImages = ({ images }) => {
   const { currentIndex } = useSlider(0, images);
 
   return (
-    <div className="slider-container">
+    <div className="slider-container" >
       <div className="slider-wrapper">
         {images.map((image, index) => (
           <img

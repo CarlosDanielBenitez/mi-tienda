@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Spin as Hamburger } from "hamburger-react";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "./NavBar.css";
 import NavigationCheckIn from "../CheckIn/NavigationCheckIn";
 
@@ -14,39 +15,35 @@ const NavBar = () => {
     <>
       <div className="headerGlobal">
         <nav className="navbar">
-
           {/* Menú hamburguesa */}
           <div className="titleHambContent">
-          <div className="menu-icon closed" onClick={toggleMenu}>
-            {isOpen && <h1 className="store-title">Mi Tienda</h1>}
-            <Hamburger
-              toggled={isOpen}
-              direction="right"
-              size={12}
-              toggledColor="#5E5E5E"
+            <div className="menu-icon closed" onClick={toggleMenu}>
+              {isOpen && <h1 className="store-title">Mi Tienda</h1>}
+              <Hamburger
+                toggled={isOpen}
+                direction="right"
+                size={12}
+                toggledColor="#5E5E5E"
               />
+            </div>
           </div>
-          </div>
-          
-          
+
           {/* Menú de navegación */}
           <ul className={`nav-links ${isOpen ? "open" : ""}`}>
             <li>
-              <a href="#muebles">Muebles</a>
+              <Link to="/">Muebles</Link> {/* Reemplaza href por to */}
             </li>
             <li>
-              <a href="#calzados">Calzados</a>
+              <Link to="/">Calzados</Link> {/* Reemplaza href por to */}
             </li>
             <li>
-              <a href="#colchones">Colchones</a>
+              <Link to="/">Colchones</Link> {/* Reemplaza href por to */}
             </li>
             <li>
-              <a href="#herramientas">Herramientas</a>
+              <Link to="/">Herramientas</Link> {/* Reemplaza href por to */}
             </li>
             <li className="ofertasContainer">
-              <a id="ofertas" href="#ofertas">
-                Ofertas
-              </a>
+              <Link to="/" id="ofertas">Ofertas</Link> {/* Reemplaza href por to */}
               <img src="../../../public/images/fire-icon.svg" alt="fire-icon" />
             </li>
           </ul>
@@ -55,9 +52,19 @@ const NavBar = () => {
         {/* Condición para mostrar o no NavigationCheckIn */}
         {!isOpen && (
           <div className="navigationCheckInAll">
-            <h1 className="store-title">Mi Tienda</h1>
+            <h1>
+              <Link className="store-title" to="/">
+                Mi Tienda
+              </Link>{" "}
+              {/* Reemplaza href por to */}
+            </h1>
             <NavigationCheckIn />
-            <img src="../../../public/images/shopping-cart.svg" alt="shopping-cart" />
+            <Link to="/">
+              <img
+                src="../../../public/images/shopping-cart.svg"
+                alt="shopping-cart"
+              />
+            </Link>
           </div>
         )}
       </div>

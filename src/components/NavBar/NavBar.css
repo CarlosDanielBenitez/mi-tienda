@@ -4,7 +4,7 @@
 .titleHambContent {
   display: flex;
 }
-.navbar h1 {
+.store-title {
   font-size: 32px;
   font-style: italic;
   font-weight: 800;
@@ -12,7 +12,8 @@
   letter-spacing: 0.1em;
   text-align: left;
   color: #0f1e7b;
-  padding-left: 1rem;
+
+  text-decoration: none;
 }
 .menu-icon {
   /*! tener en cuenta en desktop */
@@ -21,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
 }
 
 .menu-icon .hamburger-react {
@@ -97,7 +99,6 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  padding-right: 0.5rem;
 }
 
 .headerGlobalIcons {

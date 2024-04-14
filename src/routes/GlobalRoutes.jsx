@@ -9,6 +9,7 @@ const GlobalRoutes = () => {
       <Route path="/CheckIn" element={<CheckIn />} />
       {/* Agrega más rutas según sea necesario */}
       {/* <Route path="/muebles" element={<Muebles />} /> */}
+      <Route path="/ofertas" element={<Home />} />
       <Route path="/" element={<Home/>} />
     </Routes>
   );

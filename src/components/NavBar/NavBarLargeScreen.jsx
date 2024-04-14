@@ -1,23 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 
 const NavBarLargeScreen = () => {
   return (
     <nav className="navbar-large">
       <ul className="nav-links">
         <li>
-          <a href="#muebles">Muebles</a>
+          <Link to="/muebles">Muebles</Link> {/* Reemplaza href por to */}
         </li>
         <li>
-          <a href="#calzados">Calzados</a>
+          <Link to="/calzados">Calzados</Link> {/* Reemplaza href por to */}
         </li>
         <li>
-          <a href="#colchones">Colchones</a>
+          <Link to="/colchones">Colchones</Link> {/* Reemplaza href por to */}
         </li>
         <li>
-          <a href="#herramientas">Herramientas</a>
+          <Link to="/herramientas">Herramientas</Link> {/* Reemplaza href por to */}
         </li>
         <li className="ofertasContainer">
-          <a id="ofertas" href="#ofertas">Ofertas</a>
+          <Link to="/" id="ofertas">Ofertas</Link> {/* Reemplaza href por to */}
           <img src="../../../public/images/fire-icon.svg" alt="fire-icon" />
         </li>
       </ul>
