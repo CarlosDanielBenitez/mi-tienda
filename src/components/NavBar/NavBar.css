@@ -3,7 +3,6 @@
 
 .titleHambContent {
   display: flex;
-
 }
 .navbar h1 {
   font-size: 32px;
@@ -13,15 +12,15 @@
   letter-spacing: 0.1em;
   text-align: left;
   color: #0f1e7b;
-   padding-left: 1rem;
+  padding-left: 1rem;
 }
 .menu-icon {
-  height: 84px;
- width: 100%; 
+  /*! tener en cuenta en desktop */
+  width: 100%;
+  color: #5e5e5e;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  
 }
 
 .menu-icon .hamburger-react {

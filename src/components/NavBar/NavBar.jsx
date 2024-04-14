@@ -23,7 +23,7 @@ const NavBar = () => {
               toggled={isOpen}
               direction="right"
               size={12}
-              toggledColor="#000"
+              toggledColor="#5E5E5E"
               />
           </div>
           </div>
