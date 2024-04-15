@@ -1,4 +1,4 @@
-// SliderImages.js
+import React from "react";
 import useSlider from "./useSlider";
 import "./sliderStyles.css";
 
@@ -6,25 +6,18 @@ const SliderImages = ({ images }) => {
   const { currentIndex } = useSlider(0, images);
 
   return (
-    <div className="slider-container" >
+    <div className="slider-container">
       <div className="slider-wrapper">
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src}
-            alt={image.alt}
-            className={
-              index === currentIndex ? "slider-image active" : "slider-image hidden"
-            }
-          />
+          <div key={index} className={index === currentIndex ? "slider-image active" : "slider-image hidden"}>
+            <img src={image.src} alt={image.alt} />
+            <h2 className="image-text">{image.title}</h2> {/* Agrega el texto dentro de la imagen */}
+          </div>
         ))}
       </div>
       <div className="pagination">
         {images.map((_, index) => (
-          <div
-            key={index}
-            className={index === currentIndex ? "dot active" : "dot"}
-          ></div>
+          <div key={index} className={index === currentIndex ? "dot active" : "dot"}></div>
         ))}
       </div>
     </div>

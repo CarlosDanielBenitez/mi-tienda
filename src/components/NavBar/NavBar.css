@@ -12,8 +12,10 @@
   letter-spacing: 0.1em;
   text-align: left;
   color: #0f1e7b;
-
   text-decoration: none;
+  font-family: Roboto;
+font-style: italic;
+
 }
 .menu-icon {
   /*! tener en cuenta en desktop */
