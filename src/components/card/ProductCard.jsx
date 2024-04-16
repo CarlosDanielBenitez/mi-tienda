@@ -8,8 +8,8 @@ const ProductCard = ({ product, onAddToCart }) => {
   };
 
   return (
+    
     <div className="product-card-container">
-            <h1>TENDENCIAS</h1>
       <div className="product-card">
         <img src={src} alt={alt} />
         <h2>{title}</h2>

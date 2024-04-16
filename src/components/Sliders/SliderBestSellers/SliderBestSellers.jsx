@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../../card/ProductCard";
-import "./productSlider.css";
+import "./sliderBestSellers.css";
 
-const ProductSlider = ({ products }) => {
+const SliderBestSellers = ({ products }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -20,7 +20,7 @@ const ProductSlider = ({ products }) => {
 
   return (
     <div className="product-slider-container">
-      <h1 id="title">TENDENCIAS</h1>
+      <h1>LOS MAS VENDIDOS</h1>
       <div className="product-slider-wrapper">
         {products.map((product, index) => (
           <div
@@ -44,4 +44,4 @@ const ProductSlider = ({ products }) => {
   );
 };
 
-export default ProductSlider;
+export default SliderBestSellers;

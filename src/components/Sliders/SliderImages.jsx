@@ -24,7 +24,7 @@ const SliderImages = ({ images }) => {
     <div className="slider-container">
       <div className="slider-wrapper">
         {images.map((image, index) => (
-          <div
+          <div id="slider-wrapper-box"
             key={index}
             className={index === currentIndex ? "slider-image active" : "slider-image hidden"}
           >

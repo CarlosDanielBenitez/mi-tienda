@@ -1,63 +1,67 @@
-.product-card-container{
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Roboto Flex;
-font-size: 16px;
-font-weight: 500;
-line-height: 20px;
-text-align: center;
-background-color: red;
-margin-top: 2rem;
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  background-color: #dc1e0f;
+}
 
+.product-card {
+  background-color: #ffffff;
+  height: 380px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 2px 6px 0px #cccaca;
+  border-radius: 15px;
 }
-.product-card-container h1{
-    align-self: flex-start;
-    padding-top: 1rem;
-    color: #FFFFFF;
-    font-family: Roboto;
-font-size: 24px;
-font-style: italic;
-font-weight: 800;
-line-height: 32px;
-text-align: left;
-
-  
+.product-card img {
+  margin-top: 1rem;
+  width: 190px;
+  object-fit: cover;
+  object-position: center;
+  height: 190px;
 }
-.product-card{
-    background-color: #FFFFFF;
-    height: 400px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem;
-    margin: 2rem;
-    box-shadow: 0px 2px 6px 0px #CCCACA;
-    border-radius: 15px;
+.product-card h2 {
+  color: #5e5e5e;
+  font-family: Roboto Flex;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 0rem 3.4rem;
 }
-.product-card img{
-    width: 200px;
-    object-fit: cover;
-    object-position: center;
-    height: 200px;
+.product-card p {
+  font-family: Roboto Flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.13px;
+  text-align: center;
+  color: #000000b8;
 }
-.product-card h2{
-    color: #5E5E5E;
+.product-card button {
+  font-family: Encode Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  color: #dc1e0f;
+  border: #dc1e0f solid 1px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3px 18px;
 }
-.product-card p{
-    font-family: Roboto Flex;
-font-size: 24px;
-font-weight: 600;
-line-height: 28.13px;
-text-align: center;
-
+.product-list {
+  background-color: #dc1e0f;
+  padding: 1rem;
 }
-.product-card button{}
-.product-list{
-    background-color: #DC1E0F;
-}
-  
