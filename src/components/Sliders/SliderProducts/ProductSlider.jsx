@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./sliderStyles.css";
+import ProductCard from "../../card/ProductCard";
 
-const SliderImages = ({ images }) => {
+const ProductSlider = ({ products }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Función para cambiar al siguiente slide
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1));
   };
 
   // Efecto para cambiar automáticamente los slides
@@ -23,21 +23,17 @@ const SliderImages = ({ images }) => {
   return (
     <div className="slider-container">
       <div className="slider-wrapper">
-        {images.map((image, index) => (
+        {products.map((product, index) => (
           <div
             key={index}
             className={index === currentIndex ? "slider-image active" : "slider-image hidden"}
           >
-            <img src={image.src} alt={image.alt} />
-            <div className="text-box">
-              <h2 className="image-text">{image.title}</h2>
-              <h4 className="image-text-first">{image.description}</h4>
-            </div>
+            <ProductCard product={product} />
           </div>
         ))}
       </div>
       <div className="pagination">
-        {images.map((_, index) => (
+        {products.map((_, index) => (
           <div
             key={index}
             className={index === currentIndex ? "dot active" : "dot"}
@@ -49,4 +45,4 @@ const SliderImages = ({ images }) => {
   );
 };
 
-export default SliderImages;
+export default ProductSlider;

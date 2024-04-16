@@ -4,6 +4,8 @@ import SliderData from "../data/SliderData"; // Importa el componente SliderData
 import "../components/Sliders/sliderStyles.css"
 import "../components/Sliders/SliderCategories/sliderCategories.css"
 import "../components/Sliders/SliderServices/sliderServices.css";
+import ProductSlider from "../components/Sliders/SliderProducts/ProductSlider";
+import ProductsData from "../data/ProductsData";
 
 const Home = () => {
   return (
@@ -16,11 +18,14 @@ const Home = () => {
       <SliderCommercial  images={SliderData.imgSneaker} />
       </div>
       <div className="homeSliderServices">
-        <h1>SERVICIOS </h1>
+   
       
       <SliderCommercial  images={SliderData.services} />
-    
       </div>
+      <div className="homeSliderProducts">
+        <ProductSlider products={ProductsData}/>
+      </div>
+
     </div>
   );
 };

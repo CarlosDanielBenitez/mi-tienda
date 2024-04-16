@@ -4,6 +4,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-color: #ECECEC;
+  padding:  40px, 0px, 40px, 0px;
+  padding-top: 40px;
 }
 .homeSliderServices .slider-images {
   display: flex;
