@@ -6,13 +6,53 @@ const SliderData = {
     { src: "/images/bike-commercial.png", alt: "bike-commercial-3" },
     { src: "/images/bike-commercial.png", alt: "bike-commercial-4" },
   ],
+
   imgSneaker: [
-    { src: "/images/sneaker-commercial.jfif", alt: "sneaker-commercial-1", title: "ZAPATILLAS" },
-    { src: "/images/futbol-commercial.jfif", alt: "futbol-commercia-2", title: "FÚTBOL" },
-    { src: "/images/calzas-commercial.jfif", alt: "calzas-commercial-3", title: "CALZAS" },
-    { src: "/images/pelota-commercial.jfif", alt: "pelota-commercial-4", title: "PELOTAS" },
+    {
+      src: "/images/sneaker-commercial.jfif",
+      alt: "sneaker-commercial-1",
+      title: "ZAPATILLAS",
+    },
+    {
+      src: "/images/futbol-commercial.jfif",
+      alt: "futbol-commercia-2",
+      title: "FÚTBOL",
+    },
+    {
+      src: "/images/calzas-commercial.jfif",
+      alt: "calzas-commercial-3",
+      title: "CALZAS",
+    },
+    {
+      src: "/images/pelota-commercial.jfif",
+      alt: "pelota-commercial-4",
+      title: "PELOTAS",
+    },
   ],
-  // aqui agregar nueva array para slider de services 
+
+  services: [
+    {
+      src: "/images/bolsa-de-compra.svg",
+      alt: "bolsa-de-compra-1",
+      title: "Si querés más de uno, sumalos a tu carrito.",
+      description: " Elegí los productos que vas a comprar",
+    },
+    {
+      src: "/images/tarjeta-de-credito.svg",
+      alt: "tarjeta-de-credito-2",
+      title: "Comprá con seguridad: usamos la tecnología de Mercado Pago.",
+      description: "Pagá con el medio de pago que quieras",
+    },
+    {
+      //! set logistics icon
+      src: "/images/tarjeta-de-credito.svg",
+      alt: "logistics-3",
+      title:
+        "Elegí la forma de entrega que prefieras ¡y listo! Aseguramos tu entrega con Mercado Envíos.",
+      description: " Recibí el producto que esperás",
+    },
+  ],
+  // aqui agregar nueva array para slider de services
 };
 
 export default SliderData;
