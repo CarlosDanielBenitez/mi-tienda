@@ -16,8 +16,9 @@ const Home = () => {
       <div className="homeSliderGlobal">
         <SliderCommercial images={SliderData.images} />
       </div>
-      <div className="homeSliderProductStrends">
-        <ProductSlider products={ProductsData} />
+      <div  className="homeSliderProductStrends">
+      <SliderBestSellers products={ProductsData} titulo={"TENDENCIAS"}/>
+
       </div>
       <div className="homeSliderSneaker">
         <div className="titulados-containers">
@@ -25,8 +26,8 @@ const Home = () => {
         </div>
         <SliderCommercial images={SliderData.imgSneaker} />
       </div>
-      <div className="homeSliderProductsBestSellers">
-        <SliderBestSellers products={ProductsData} />
+      <div id="masVendidos" className="homeSliderProductsBestSellers">
+        <SliderBestSellers products={ProductsData} titulo={"LAS MAS VENDIDAS"}/>
       </div>
       <div id="homeServicesAlls" className="homeSliderServices">
         <SliderCommercial images={SliderData.services} />
@@ -38,7 +39,7 @@ const Home = () => {
           <h3>Si querés más de uno, sumalos a tu carrito.</h3>
         </div>
         <div className="flex-tarjeta">
-          <img src="../../public/images/bolsa-de-compra.svg" alt="" />
+          <img src="../../public/images/tarjeta-de-credito.svg" alt="" />
           <h2>Pagá con el medio de pago que quieras.</h2>
           <h3>Comprá con seguridad: usamos la tecnología de Mercado Pago.</h3>
         </div>

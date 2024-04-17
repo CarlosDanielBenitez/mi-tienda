@@ -19,8 +19,8 @@ const Footer = () => {
         </div>
         <div className="image-section-nosotros">
           <h2>Powered by Pierce commerce</h2>
-          <img src="../../../public/images/pierce.svg" alt="Imagen 1" />
-          <img src="../../../public/images/vtex.svg" alt="Imagen 2" />
+          <img src="../../../public/images/pierce.svg" alt="pierce" />
+          <img src="../../../public/images/vtex.svg" alt="vtex" />
         </div>
       </div>
       <div className="column hidden">
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="column box-data-global">
         <div className="box-sucursales">
-          <img src="../../../public/images/location-icon.svg" alt="Imagen 5" />
+          <img src="../../../public/images/location-icon.svg" alt="location" />
           <p>SUCURSALES</p>
         </div>
         <div className="text-section">
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         <div className="image-section-data">
           <h2>© 2023 MateuSports</h2>
-          <img src="../../../public/images/fiscal-qr.jfif" alt="Imagen 6" />
+          <img src="../../../public/images/fiscal-qr.jfif" alt="QR" />
         </div>
       </div>
     </footer>

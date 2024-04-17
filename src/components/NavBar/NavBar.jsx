@@ -66,7 +66,7 @@ const NavBar = () => {
             <Link to="/">
               <img
                 src="../../../public/images/shopping-cart.svg"
-                alt="shopping-cart"
+                alt="cart"
                 />
             </Link>
                 </div>

@@ -6,7 +6,7 @@ const NavigationCheckIn = () => {
     if (location.pathname !== "/CheckIn") {
       return (
         <Link to="/CheckIn">  
-          <img className="iconsAll" src="./public/images/user-icon.svg" alt="user-icon" />
+          <img className="iconsAll" src="./public/images/user-icon.svg" alt="user" />
         </Link>
       );
     }

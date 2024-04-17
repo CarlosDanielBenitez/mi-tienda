@@ -8,12 +8,10 @@
   font-weight: 500;
   line-height: 20px;
   text-align: center;
-  background-color: #dc1e0f;
+  background-color: #dc1e0f; 
 }
 
-.homeSliderProductsBestSellers .product-card-container {
-  background-color: #FFFFFF;
-}
+
 
 .product-card {
   background-color: #FFFFFF;
@@ -71,3 +69,4 @@
   padding: 1rem;
 
 }
+

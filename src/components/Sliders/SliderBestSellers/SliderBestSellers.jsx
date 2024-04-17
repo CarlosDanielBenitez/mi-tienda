@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../../card/ProductCard";
 import "./sliderBestSellers.css";
+import "../../Sliders/SliderProducts/productSlider.css";
 
-const SliderBestSellers = ({ products }) => {
+const SliderBestSellers = ({ products , titulo}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -19,30 +20,26 @@ const SliderBestSellers = ({ products }) => {
   };
 
   return (
-    <div className="product-slider-container">
-      <div className="titulados-containers">
-      <h1 className="">LOS MAS VENDIDOS</h1>
+    <div className="homeSliderProductsBestSellers product-slider-container">
+      <div className="homeSliderProductsBestSellers titulados-containers">
+        <h1 className="">{titulo}</h1>
       </div>
-      <div className="product-slider-wrapper">
+      <div className="homeSliderProductsBestSellers product-slider-wrapper">
         {products.map((product, index) => (
-          <div
-            key={index}
-            className={index === currentIndex ? "product-slider-image active" : "product-slider-image hidden"}
-          >
-            <ProductCard product={product} />
+          <div key={index} className="homeSliderProductsBestSellers product-slider-image">
+            <ProductCard product={product} currentIndex={currentIndex} />
           </div>
         ))}
       </div>
-      <div className="product-pagination">
+      <div className="homeSliderProductsBestSellers product-pagination">
         {products.map((_, index) => (
           <div
             key={index}
-            className={index === currentIndex ? "product-dot active" : "product-dot"}
+            className={index === currentIndex ? "homeSliderProductsBestSellers product-dot active" : "homeSliderProductsBestSellers product-dot"}
             onClick={() => handleDotClick(index)}
           ></div>
         ))}
       </div>
-      
     </div>
   );
 };

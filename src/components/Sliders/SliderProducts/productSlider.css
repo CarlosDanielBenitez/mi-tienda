@@ -1,8 +1,18 @@
+.homeSliderProductStrends >div{
+background-color: #DC1E0F;
+
+}
+.homeSliderProductStrends div div div div div div{
+  background-color: #DC1E0F;
+}
+#masVendidos div:first-child{
+  background-color: #ffffff;
+}
 .homeSliderProductStrends .product-slider-container {
   position: relative;
+
   width: 100%;
   overflow: hidden;
-  background-color: #dc1e0f;
   padding-top: 1rem;
   margin-top: 2rem;
 }
@@ -22,6 +32,9 @@
 @media screen and (min-width: 768px) {
   #title{
 margin-left: 2.3rem;
+  }
+  .product-pagination div.active {
+    display: none;
   }
 }
 .product-slider-wrapper {
@@ -60,4 +73,5 @@ margin-left: 2.3rem;
 .product-pagination div.active {
   background-color: #ffffff;
 }
+
 

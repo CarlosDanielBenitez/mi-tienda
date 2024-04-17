@@ -3,7 +3,6 @@
   width: 100%;
   overflow: hidden;
 background-color: #ffffff;
-
 }
 
 #title {
@@ -56,7 +55,7 @@ background-color: #ffffff;
 .homeSliderProductsBestSellers .product-pagination div{
   background-color: #FFFFFF;
   border: 1.5px solid red;
-
+  
 }
 .homeSliderProductsBestSellers .product-pagination div.active {
   background-color: red;
@@ -66,13 +65,68 @@ background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   #title{padding-left: 2rem;} 
-
+  
   /*? card box container products*/
   .product-slider-wrapper {
     justify-content: center;
   }
   /*?esferas de product cards*/
   .product-pagination {
-     display: none; 
+    display: none; 
   }
 }
+
+
+.product-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.titulados-containers {
+  display: flex;
+  padding-left: rem;
+}
+
+.product-slider-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+
+.product-slider-image {
+  flex: 0 0 auto;
+}
+
+.product-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.product-pagination div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.product-pagination div.active {
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .product-pagination {
+    display: none;
+  }
+}
+

@@ -70,6 +70,7 @@
     grid-template-areas:
       "zapatillas futbol futbol pelotas"
       "zapatillas calzas calzas pelotas";
+    padding: 0 4rem;
   }
   /*? imagenes de grid */
   .homeSliderSneaker .slider-image {
