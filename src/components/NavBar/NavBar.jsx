@@ -45,11 +45,10 @@ const NavBar = () => {
             </li>
             <li className="ofertasContainer">
               <Link to="/" id="ofertas">Ofertas</Link> {/* Reemplaza href por to */}
-              {/* <img src="../../../public/images/fire-icon.png" alt="fire-icon" /> */}
-              <link rel="shortcut icon" href="../../../public/images/fire-icon.svg" type="image/x-icon" />
+              <img src="/public/images/fire-icon.svg" alt="fire-icon" />
             </li>
           </ul>
-
+          
         </nav>
 
         {/* Condición para mostrar o no NavigationCheckIn */}
