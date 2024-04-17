@@ -114,6 +114,7 @@
 
 .homeSliderServices .slider-wrapper-box{
 display: flex;
+
 }
 .homeSliderServices .slider-wrapper img {
   height: max-content;

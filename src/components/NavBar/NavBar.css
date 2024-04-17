@@ -3,6 +3,7 @@
 
 .titleHambContent {
   display: flex;
+
 }
 .store-title {
   font-size: 32px;
@@ -14,8 +15,8 @@
   color: #0f1e7b;
   text-decoration: none;
   font-family: Roboto;
-font-style: italic;
-
+  font-style: italic;
+  padding-left: 1rem;
 }
 .menu-icon {
   /*! tener en cuenta en desktop */
@@ -24,7 +25,6 @@ font-style: italic;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  
 }
 
 .menu-icon .hamburger-react {
@@ -63,6 +63,10 @@ font-style: italic;
   margin: 1rem;
   padding-bottom: 0.7rem;
   list-style: none;
+}
+.nav-links li {
+  border-bottom: 0.65px solid #000000;
+  margin: 1rem;
 }
 .nav-links li:last-child {
   border: none;
@@ -108,21 +112,33 @@ font-style: italic;
   width: 100%;
   justify-content: space-between;
 }
-
 /*? NAVBAR DESKTOP */
 /* Estilos para NavBarLargeScreen */
 .navbar-large {
   display: none; /* Por defecto, se oculta en pantallas pequeñas */
 }
+.iconsHeader{
+  display: flex;
+  width: 100%;
+  column-gap: .5rem;
+
+}
 
 /* Estilos para pantallas grandes (768px o más) */
 @media (min-width: 768px) {
+  .store-title {
+    padding-left: 4rem;
+  }
   .navbar-large {
     display: flex; /* Muestra el NavBar en pantallas grandes */
+    margin-right: 2rem;
 
     justify-content: flex-end;
   }
-
+  .iconsHeader{
+    justify-content: flex-end;
+    margin-right: 3.3rem;
+  }
   .nav-links {
     display: flex;
     justify-content: space-around;
@@ -130,6 +146,11 @@ font-style: italic;
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  .nav-links li {
+    border-bottom: none;
+    margin: 0rem;
   }
 
   .nav-links li {
@@ -141,4 +162,8 @@ font-style: italic;
     height: 20px;
     margin-left: 5px;
   }
+}
+.nav-links li {
+  list-style: none;
+  text-decoration: none;
 }

@@ -1,64 +1,78 @@
-.product-slider-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color:#DC1E0F;
-    padding-top: 1rem;
-padding-left: .5rem;
-  }
-  
-#title{
-    align-self: flex-start;
-    padding-bottom: 1rem;
-    color: #FFFFFF;
-    font-family: Roboto;
-font-size: 24px;
-font-style: italic;
-font-weight: 800;
-line-height: 32px;
-text-align: left;
+.homeSliderProductsBestSellers .product-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+background-color: #ffffff;
 
-  
 }
+
+#title {
+  align-self: flex-start;
+  padding-bottom: 1rem;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: left;
+}
+/*! contenedor de card jcc en desktop */
+.product-slider-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+
+
+.product-slider-image {
+  flex: 0 0 auto;
+}
+/*? esferas de paginas automatizadas y clicables*/
+.product-slider-image.active {
+  flex: 0 0 auto;
+}
+
+.product-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.product-pagination div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/*? esferas de los mas vendidos */
+.homeSliderProductsBestSellers .product-pagination div{
+  background-color: #FFFFFF;
+  border: 1.5px solid red;
+
+}
+.homeSliderProductsBestSellers .product-pagination div.active {
+  background-color: red;
+}
+.product-pagination div.active {
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  #title{padding-left: 2rem;} 
+
+  /*? card box container products*/
   .product-slider-wrapper {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-  
-  .product-slider-image {
-    flex: 0 0 auto;
-  }
-  
-  .product-slider-image.active {
-    flex: 0 0 auto;
-  }
-  
-  .product-pagination {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
   }
-  
-  .product-pagination div {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 1.5px solid #ffffff;
-    margin: 0 5px;
-    cursor: pointer;
+  /*?esferas de product cards*/
+  .product-pagination {
+     display: none; 
   }
-  
-  .product-pagination div.active {
-    background-color: #ffffff;
-  }
-  
-  .product-slider-container{
-    display: flex;
-    flex-direction: column;
-
-  }
+}

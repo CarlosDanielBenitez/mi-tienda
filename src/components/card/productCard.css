@@ -11,8 +11,12 @@
   background-color: #dc1e0f;
 }
 
+.homeSliderProductsBestSellers .product-card-container {
+  background-color: #FFFFFF;
+}
+
 .product-card {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   height: 380px;
   width: 250px;
   display: flex;
@@ -24,6 +28,7 @@
   margin-bottom: 2.5rem;
   box-shadow: 0px 2px 6px 0px #cccaca;
   border-radius: 15px;
+
 }
 .product-card img {
   margin-top: 1rem;
@@ -64,4 +69,5 @@
 .product-list {
   background-color: #dc1e0f;
   padding: 1rem;
+
 }

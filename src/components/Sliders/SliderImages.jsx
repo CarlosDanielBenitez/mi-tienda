@@ -6,7 +6,9 @@ const SliderImages = ({ images }) => {
 
   // Función para cambiar al siguiente slide
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   // Efecto para cambiar automáticamente los slides
@@ -24,9 +26,14 @@ const SliderImages = ({ images }) => {
     <div className="slider-container">
       <div className="slider-wrapper">
         {images.map((image, index) => (
-          <div id="slider-wrapper-box"
+          <div
+            id="slider-wrapper-box"
             key={index}
-            className={index === currentIndex ? "slider-image active" : "slider-image hidden"}
+            className={
+              index === currentIndex
+                ? "slider-image active"
+                : "slider-image hidden"
+            }
           >
             <img src={image.src} alt={image.alt} />
             <div className="text-box">

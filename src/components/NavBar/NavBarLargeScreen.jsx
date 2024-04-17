@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
-
+import "./NavBar.css"
 const NavBarLargeScreen = () => {
   return (
     <nav className="navbar-large">
-      <ul className="nav-links">
+      <ul id="nav-links" className="nav-links">
         <li>
           <Link to="/muebles">Muebles</Link> {/* Reemplaza href por to */}
         </li>

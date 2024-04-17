@@ -4,14 +4,13 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 }
 .slider-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
- 
 }
-.slider-wrapper{
- 
+.slider-wrapper {
   width: 100%;
   height: 100%;
 }
@@ -19,19 +18,18 @@
 .slider-wrapper img {
   /*! cambiar en desktop max-height none*/
   width: 100%;
-  height:100%;
+  height: 100%;
   
   object-fit: cover;
   object-position: center;
 }
+
 .slider-image {
   display: none;
-  
 }
 
 .slider-image.active {
   display: block;
-  
 }
 
 .pagination {
@@ -60,32 +58,29 @@
 }
 
 /*! Home configurations Sneakers Sliders */
-.homeSliderGlobal{
+.homeSliderGlobal {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
-.homeSliderGlobal h1{
+.homeSliderGlobal h1 {
   font-family: Roboto;
   font-size: 24px;
   font-style: italic;
   font-weight: 800;
   line-height: 28px;
-  text-align: left;  
-padding: 0px 16px 0px 16px;
-margin: 1rem 0;
-
+  text-align: left;
+  padding: 0px 16px 0px 16px;
 }
 .homeSliderSneaker {
   display: flex;
   flex-direction: column;
 }
-.homeSliderSneaker .slider-wrapper{
+.homeSliderSneaker .slider-wrapper {
   height: 100%;
   max-height: 320px;
 }
-.homeSliderSneaker .slider-wrapper img{
- 
+.homeSliderSneaker .slider-wrapper img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -112,11 +107,94 @@ margin: 1rem 0;
   position: relative;
   padding-top: 1rem;
 }
-.homeSliderSneaker .pagination div{
+.homeSliderSneaker .pagination div {
   border: 1.5px solid #000000;
-
 }
-.homeSliderSneaker .pagination div.active{
+.homeSliderSneaker .pagination div.active {
   background-color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .homeSliderGlobal .titulos {
+    width: 100%;
+    left: 3.4rem;
+    position: relative;
+  }
+
+  /*? grid calzas, zapatillas,pelotas etc. */
+
+
+
+
+  .homeSliderSneaker .slider-wrapper img{
+    max-height: none;
+  }
+  .homeSliderSneaker .pagination{
+    display: none;
+  }
+  .homeSliderSneaker .slider-image {
+    display: block;
+    max-height: none;
+  }
+
+  .homeSliderSneaker{
+    max-height: none;
+    
+  }
+  .homeSliderSneaker .slider-wrapper{
+    display: grid;
+    max-height: none;
+    
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows:100px 100px;
+  max-height: none;
+  grid-template-areas: 
+  'zapatillas futbol futbol pelotas'
+  'zapatillas calzas calzas pelotas'
+  ;
+}
+/*? imagenes de grid */
+.homeSliderSneaker .slider-image {
+  display: block;
+}
+
+.homeSliderSneaker .slider-image:nth-child(1){
+  grid-area: zapatillas;
+  height: 500px;
+  background-color:  #BF2A2F;
+  height: 100%;
+}
+.homeSliderSneaker .slider-image:nth-child(2){
+  grid-area: futbol;
+  
+}
+.homeSliderSneaker .slider-image:nth-child(3){
+  grid-area: pelotas;
+}
+
+.homeSliderSneaker .slider-image:nth-child(4){
+
+  grid-area: calzas;
+}
+.homeSliderSneaker .slider-wrapper .image-text{
+display: flex;
+  justify-content: flex-start;
+  
+}
+.homeSliderSneaker .slider-wrapper .image-text {
+  font-size: 18px;
+  position: relative;
+  transform: none;
+  font-weight: bold;
+  text-align: center; /* Alinea el texto al centro */
+  font-family: Rubik;
+  font-size: 28px;
+display: flex;
+justify-content: start;
+  bottom: 140px;
+left: 30px;
+}
+.homeSliderSneaker .slider-wrapper .image-text:first-child{
+  color:#ffffff;
+}
 
 }

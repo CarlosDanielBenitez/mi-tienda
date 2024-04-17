@@ -9,7 +9,7 @@ const useSlider = (initialIndex, images) => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 9000); // Cambiar de imagen cada 9 segundos
+    }, 90000); // Cambiar de imagen cada 9 segundos
 
     return () => clearInterval(interval); // Limpiar el temporizador al desmontar el componente
   }, [currentIndex, images.length]);

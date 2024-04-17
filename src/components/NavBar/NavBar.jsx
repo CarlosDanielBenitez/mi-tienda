@@ -58,13 +58,16 @@ const NavBar = () => {
               </Link>{" "}
               {/* Reemplaza href por to */}
             </h1>
+            <div className="iconsHeader">
+
             <NavigationCheckIn />
             <Link to="/">
               <img
                 src="../../../public/images/shopping-cart.svg"
                 alt="shopping-cart"
-              />
+                />
             </Link>
+                </div>
           </div>
         )}
       </div>

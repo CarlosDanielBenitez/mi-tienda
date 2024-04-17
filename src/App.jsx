@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import NavBarLargeScreen from "./components/NavBar/NavBarLargeScreen";
 import GlobalRoutes from "./routes/GlobalRoutes";
 import "./App.css";
+import Footer from "./pages/Footer/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <NavBar />
       <NavBarLargeScreen />
       <GlobalRoutes />
+      <Footer/>
     </Router>
   );
 };
