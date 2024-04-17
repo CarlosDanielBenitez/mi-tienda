@@ -3,6 +3,7 @@ import { Spin as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "./NavBar.css";
 import NavigationCheckIn from "../CheckIn/NavigationCheckIn";
+import Search from "../Search/Search";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,6 +59,7 @@ const NavBar = () => {
               </Link>{" "}
               {/* Reemplaza href por to */}
             </h1>
+              <Search/>
             <div className="iconsHeader">
 
             <NavigationCheckIn />
@@ -68,6 +70,8 @@ const NavBar = () => {
                 />
             </Link>
                 </div>
+                
+
           </div>
         )}
       </div>

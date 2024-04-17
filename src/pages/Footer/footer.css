@@ -23,6 +23,7 @@ h2 {
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+  padding-bottom: .3rem;
 }
 .text-section-nosotros button {
   background-color: transparent;
@@ -78,12 +79,13 @@ justify-content: center;
   align-items: start;
   justify-content: space-between;
 
+  row-gap: 1rem;
   
 }
 .box-info{
   display: flex;
   flex-direction: column;
-  row-gap: 2px;
+  row-gap: 1rem;
 }
 .image-section-data{
   display: flex;
@@ -112,19 +114,29 @@ height: 37.15px;
     display: flex;
     flex-direction: column;
     padding: 0%;
-
+    
   }
   .column p {
     text-align: center;
   }
   .box-sucursales{
-  margin: 1rem 0;
- }
- /* titulo */
+    margin: 1rem 0;
+  }
+  /* titulo */
+  
+  .watch{
+    display:block;
+  }
+  .hidden{
+    display: none;
+}
+
+}
+
+
 .watch{
   display: block;
 }
 .hidden{
   display: none;
-}
 }

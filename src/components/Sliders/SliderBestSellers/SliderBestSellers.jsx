@@ -20,7 +20,9 @@ const SliderBestSellers = ({ products }) => {
 
   return (
     <div className="product-slider-container">
-      <h1 className="titulos">LOS MAS VENDIDOS</h1>
+      <div className="titulados-containers">
+      <h1 className="">LOS MAS VENDIDOS</h1>
+      </div>
       <div className="product-slider-wrapper">
         {products.map((product, index) => (
           <div
