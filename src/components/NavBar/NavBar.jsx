@@ -56,28 +56,27 @@ const NavBar = () => {
 
         {/* Condición para mostrar o no NavigationCheckIn */}
         {!isOpen && (
-          <div className="sarch-header-global">
-            <div className="navigationCheckInAll">
-              <Search />
-              <div className="iconsHeader">
-              <h1>
-                <Link className="store-title" to="/">
-                  Mi Tienda
-                </Link>{" "}
-                {/* Reemplazar href por to */}
-              </h1>
-                <NavigationCheckIn />
-                <Link to="/">
-                  <img src="/images/shopping-cart.svg" alt="cart" />
-                </Link>
-              </div>
+          <div className="navigationCheckInAll">
+            <h1>
+              <Link className="store-title" to="/">
+                Mi Tienda
+              </Link>{" "}
+              {/* Reemplazar href por to */}
+            </h1>
+            <Search />
+            <div className="iconsHeader">
+              <NavigationCheckIn />
+              <Link to="/">
+                <img src="/images/shopping-cart.svg" alt="cart" />
+              </Link>
             </div>
           </div>
         )}
       </div>
-            <div className="search-header-global-mobile">
-              <SearchMobile/>
-            </div>
+
+      <div className="search-header-global-mobile">
+        <SearchMobile />
+      </div>
     </div>
   );
 };

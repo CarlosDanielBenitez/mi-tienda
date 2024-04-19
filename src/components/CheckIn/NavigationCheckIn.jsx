@@ -20,8 +20,17 @@ const NavigationCheckIn = () => {
                 </div>
             </Link>
         );
+    } else {
+        // Devolver un componente alternativo cuando está en la página de CheckIn
+        return (
+            <Link to="/CheckIn" style={linkStyles}>
+            <div className="icon-user-container">
+                <img className="iconsAll" src="images/user-icon.svg" alt="user" />
+                <p>Mi cuenta</p>
+            </div>
+        </Link>
+        );
     }
-    return null;
 };
 
 export default NavigationCheckIn;

@@ -3,7 +3,6 @@
 
 .titleHambContent {
   display: flex;
-
 }
 .store-title {
   font-size: 32px;
@@ -17,7 +16,6 @@
   font-family: Roboto;
   font-style: italic;
   padding-left: 1rem;
-
 }
 .menu-icon {
   /*! tener en cuenta en desktop */
@@ -113,7 +111,7 @@
   width: 100%;
   justify-content: space-between;
 }
-.icon-user-container{
+.icon-user-container {
   display: flex;
 }
 /*? NAVBAR DESKTOP */
@@ -121,12 +119,12 @@
 .navbar-large {
   display: none; /* Por defecto, se oculta en pantallas pequeñas */
 }
-.iconsHeader{
+.iconsHeader {
   display: flex;
   width: 100%;
-  column-gap: .5rem;
-align-items: center;
-padding-right: 1.4rem;
+  
+  justify-content: flex-end;
+  padding-right: 1.4rem;
 }
 
 /* Estilos para pantallas grandes (768px o más) */
@@ -139,9 +137,9 @@ padding-right: 1.4rem;
     display: flex; /* Muestra el NavBar en pantallas grandes */
 
     justify-content: flex-end;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
-  .iconsHeader{
+  .iconsHeader {
     justify-content: flex-end;
     margin-right: 1.4rem;
   }
@@ -174,11 +172,9 @@ padding-right: 1.4rem;
   text-decoration: none;
 }
 
-.sarch-header-global{
+.sarch-header-global {
   display: flex;
   width: 100%;
   align-items: center;
-flex-wrap: wrap;
-
+  flex-wrap: wrap;
 }
-
