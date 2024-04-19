@@ -36,7 +36,7 @@ const SliderData = {
       alt: "bolsa-de-compra-1",
       title: "Si querés más de uno, sumalos a tu carrito.",
       description: "ELEGÍ LOS PRODUCTOS QUE VAS A COMPRAR.",
-  },
+    },
     {
       src: "/images/tarjeta-de-credito.svg",
       alt: "tarjeta-de-credito-2",

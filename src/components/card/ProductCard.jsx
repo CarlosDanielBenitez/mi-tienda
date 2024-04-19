@@ -1,12 +1,7 @@
 import React from "react";
 import "./productCard.css";
 
-const ProductCard = ({
-  product,
-  currentIndex,
-  setCurrentIndex,
-  totalSlides,
-}) => {
+const ProductCard = ({ product, currentIndex }) => {
   const { src, alt, title, description } = product;
 
   const handleAddToCart = () => {

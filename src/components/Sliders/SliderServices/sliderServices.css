@@ -4,24 +4,23 @@
   display: flex;
   width: 100%;
   align-items: center;
+
   justify-content: center;
-  margin-top:4rem;
+  margin-top: 4rem;
 }
 .homeSliderServices .slider-container {
-  height: 280px;
+  height: 290px;
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color:#ECECEC;
-  padding:  40px, 0px, 40px, 0px;
+  background-color: #ececec;
+  padding: 40px, 0px, 40px, 0px;
   padding-top: 40px;
   /* max-width: 360px; */
-  
 }
-.homeSliderServices .slider-images{
+.homeSliderServices .slider-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
- 
 }
 .homeSliderServices .slider-wrapper {
   width: 100%;
@@ -30,23 +29,22 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
 }
-.homeSliderServices .slider-wrapper{
-  display: flex; 
-  background-color: #ECECEC;
+.homeSliderServices .slider-wrapper {
+  display: flex;
+  background-color: #ececec;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.homeSliderServices  .slider-wrapper img {
+.homeSliderServices .slider-wrapper img {
   /*! cambiar en desktop max-height none*/
   width: 100%;
   height: 200px;
   object-fit: cover;
-  
+
   object-position: center;
   margin-bottom: 1rem;
 }
@@ -101,10 +99,9 @@
   padding: 0px 16px 0px 16px;
 }
 .homeSliderServices {
-  background-color: #ECECEC;
+  background-color: #ececec;
   display: flex;
   flex-direction: column;
-
 }
 
 /*! contenedor global delslider de servicios */
@@ -116,26 +113,21 @@
   align-items: center;
 }
 
-.homeSliderServices .slider-wrapper-box{
-display: flex;
-
+.homeSliderServices .slider-wrapper-box {
+  display: flex;
 }
 .homeSliderServices .slider-wrapper img {
   height: max-content;
   width: auto;
   object-fit: cover;
   object-position: center;
-
 }
 .homeSliderServices .slider-wrapper .text-box {
-
   width: 100%;
   height: 100%;
   display: flex;
   padding: 0px 16px 0px 16px;
   justify-content: space-between;
-  
-  
 }
 .image-text-first {
   font-family: Rubik;

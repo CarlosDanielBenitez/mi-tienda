@@ -1,14 +1,11 @@
-.homeSliderProductStrends >div{
-background-color: #DC1E0F;
-
+.homeSliderProductStrends > div {
+  background-color: #dc1e0f;
 }
-.homeSliderProductStrends div div div div div div{
-  background-color: #DC1E0F;
+.homeSliderProductStrends div div div div div div {
+  background-color: #dc1e0f;
 }
-#masVendidos div:first-child{
-  
- background-color: #ffffff; 
-
+#masVendidos div:first-child {
+  background-color: #ffffff;
 }
 .homeSliderProductStrends .product-slider-container {
   position: relative;
@@ -31,8 +28,8 @@ background-color: #DC1E0F;
 }
 
 @media screen and (min-width: 768px) {
-  #title{
-margin-left: 2.3rem;
+  #title {
+    margin-left: 2.3rem;
   }
   .product-pagination div.active {
     display: none;
@@ -74,5 +71,3 @@ margin-left: 2.3rem;
 .product-pagination div.active {
   background-color: #ffffff;
 }
-
-

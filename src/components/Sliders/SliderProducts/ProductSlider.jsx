@@ -6,7 +6,9 @@ const ProductSlider = ({ products }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === products.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   useEffect(() => {
@@ -20,12 +22,15 @@ const ProductSlider = ({ products }) => {
 
   return (
     <div className="product-slider-container">
-     
       <div className="product-slider-wrapper">
         {products.map((product, index) => (
           <div
             key={index}
-            className={index === currentIndex ? "product-slider-image active" : "product-slider-image hidden"}
+            className={
+              index === currentIndex
+                ? "product-slider-image active"
+                : "product-slider-image hidden"
+            }
           >
             <ProductCard product={product} />
           </div>
@@ -35,7 +40,9 @@ const ProductSlider = ({ products }) => {
         {products.map((_, index) => (
           <div
             key={index}
-            className={index === currentIndex ? "product-dot active" : "product-dot"}
+            className={
+              index === currentIndex ? "product-dot active" : "product-dot"
+            }
             onClick={() => handleDotClick(index)}
           ></div>
         ))}

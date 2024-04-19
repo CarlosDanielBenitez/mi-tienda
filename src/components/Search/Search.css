@@ -2,22 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
-cursor: pointer;
+  background: #ffffff;
+  cursor: pointer;
   border-radius: 48px;
   padding: 0 0.5rem;
   border: 1px solid #bababa;
   width: 100%;
   display: none;
 }
-.search-container:hover{
-box-shadow: 0px 2px 6px 0px #cccaca;
-
+.search-container:hover {
+  box-shadow: 0px 2px 6px 0px #cccaca;
 }
 
 .search-content {
   flex: 1;
-  background: #FFFFFF;
+  background: #ffffff;
 
   margin: 1rem 0;
 }
@@ -28,7 +27,7 @@ box-shadow: 0px 2px 6px 0px #cccaca;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
-  .search-container{
+  .search-container {
     display: flex;
   }
 }

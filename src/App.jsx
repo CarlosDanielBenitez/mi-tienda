@@ -12,7 +12,7 @@ const App = () => {
       <NavBar />
       <NavBarLargeScreen />
       <GlobalRoutes />
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

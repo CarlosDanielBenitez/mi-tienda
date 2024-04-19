@@ -30,7 +30,7 @@ h2 {
   background-color: transparent;
   border: #ffffff solid 1px;
   color: #ffffff;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem 0 2rem 0;
   font-family: Rubik;
   font-size: 12px;
@@ -64,17 +64,18 @@ h2 {
 }
 .mi-tienda h1 {
   padding: 2rem 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 32px;
-font-style: italic;
-font-weight: 800;
-line-height: 37.5px;
-letter-spacing: 0.1em;
-text-align: left;
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 37.5px;
+  letter-spacing: 0.1em;
+  text-align: left;
 }
 .image-section h1 {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 32px;
   font-style: italic;
   font-weight: 800;
@@ -145,6 +146,35 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   height: 37.15px;
 }
 
+/*? moble end footer */
+.section-data-end-all {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-data-end-all div:nth-child(1) {
+  display: flex;
+  column-gap: 0.3rem;
+  margin-top: 1rem;
+}
+.image-section-data-show {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  row-gap: 1.3rem;
+}
+.image-section-data-show img:nth-child(2) {
+  margin-left: 1rem;
+  width: 49px;
+  opacity: 0px;
+}
+.section-data-end-all h2 {
+  font-family: Encode Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   .footer {
@@ -177,10 +207,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   }
 
   .image-section-data-show {
-    display: none;
+    display: flex;
   }
-
- 
 }
 
 @media screen and (min-width: 768px) {
@@ -197,41 +225,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   .image-section-data-hidden {
     display: flex;
   }
-}
 
-/*? moble end footer */
-.section-data-end-all {
-  display: flex;
-
-  flex-direction: column;
-}
-
-.section-data-end-all div:nth-child(1){
- display: flex;
- column-gap: .3rem;
- margin-top: 1rem;
-}
-.image-section-data-show {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
-  row-gap: 1.3rem;
-
-}
-.image-section-data-show img:nth-child(2){
- margin-left: 1rem; 
- width: 49px;
- opacity: 0px;
- 
-}
-.section-data-end-all h2 {
-  font-family: Encode Sans;
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-text-align: center;
-
-}
-
-.image-section-data-end {
+  .section-data-end-all {
+    display: none;
+  }
 }

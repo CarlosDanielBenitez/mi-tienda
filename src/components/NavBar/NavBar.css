@@ -122,7 +122,7 @@
 .iconsHeader {
   display: flex;
   width: 100%;
-  
+
   justify-content: flex-end;
   padding-right: 1.4rem;
 }
@@ -135,7 +135,7 @@
   }
   .navbar-large {
     display: flex; /* Muestra el NavBar en pantallas grandes */
-
+    margin-right: 1.5rem;
     justify-content: flex-end;
     padding-top: 0.5rem;
   }
@@ -177,4 +177,39 @@
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 375px) and (max-width: 422px) {
+  .navigationCheckInAll {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 423px) and (max-width: 500px) {
+  .navigationCheckInAll {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 555px) {
+  .navigationCheckInAll {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 555px) and (max-width: 600px) {
+  .navigationCheckInAll {
+    margin-left: 9rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .navigationCheckInAll {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 666px) and (max-width: 768px) {
+  .navigationCheckInAll {
+    margin-left: 13.5rem;
+  }
 }

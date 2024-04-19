@@ -1,7 +1,7 @@
 import React from "react";
 import "./Search.css";
 
-const Search = ({children }) => {
+const Search = ({ children }) => {
   return (
     <div className="search-container">
       <div className="search-content">{children}</div>

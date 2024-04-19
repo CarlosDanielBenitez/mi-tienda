@@ -1,5 +1,5 @@
-.search-header-global-mobile{
-  padding: 0 .8rem;
+.search-header-global-mobile {
+  padding: 0 0.8rem;
 }
 .mobile-search-container {
   display: flex;
@@ -12,7 +12,7 @@
   border: 1px solid #bababa;
   width: 100%;
   display: flex;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 .mobile-search-container:hover {
   box-shadow: 0px 2px 6px 0px #cccaca;
