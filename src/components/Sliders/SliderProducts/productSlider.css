@@ -6,14 +6,15 @@ background-color: #DC1E0F;
   background-color: #DC1E0F;
 }
 #masVendidos div:first-child{
-  background-color: #ffffff;
+  
+ background-color: #ffffff; 
+
 }
 .homeSliderProductStrends .product-slider-container {
   position: relative;
 
   width: 100%;
   overflow: hidden;
-  padding-top: 1rem;
   margin-top: 2rem;
 }
 

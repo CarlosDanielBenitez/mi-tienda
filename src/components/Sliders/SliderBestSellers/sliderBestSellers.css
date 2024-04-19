@@ -41,6 +41,7 @@ background-color: #ffffff;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  column-gap: .2rem;
 }
 
 .product-pagination div {
@@ -52,13 +53,19 @@ background-color: #ffffff;
   cursor: pointer;
 }
 /*? esferas de los mas vendidos */
-.homeSliderProductsBestSellers .product-pagination div{
-  background-color: #FFFFFF;
-  border: 1.5px solid red;
-  
+#masVendidos h1{
+  margin-bottom: 2rem;
 }
-.homeSliderProductsBestSellers .product-pagination div.active {
-  background-color: red;
+#masVendidos  {
+ margin: rem 0;
+
+}
+#masVendidos  .product-pagination div{
+  border: 1.5px solid #DC1E0F;
+}
+#masVendidos  .product-pagination div.active {
+  background-color:  #DC1E0F;
+  
 }
 .product-pagination div.active {
   background-color: #ffffff;
@@ -86,7 +93,7 @@ background-color: #ffffff;
 
 .titulados-containers {
   display: flex;
-  padding-left: rem;
+  margin-top: 1rem;
 }
 
 .product-slider-wrapper {

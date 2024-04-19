@@ -35,21 +35,21 @@ const SliderData = {
       src: "/images/bolsa-de-compra.svg",
       alt: "bolsa-de-compra-1",
       title: "Si querés más de uno, sumalos a tu carrito.",
-      description: " Elegí los productos que vas a comprar",
-    },
+      description: "ELEGÍ LOS PRODUCTOS QUE VAS A COMPRAR.",
+  },
     {
       src: "/images/tarjeta-de-credito.svg",
       alt: "tarjeta-de-credito-2",
       title: "Comprá con seguridad: usamos la tecnología de Mercado Pago.",
-      description: "Pagá con el medio de pago que quieras",
+      description: "PAGÁ CON EL MEDIO DE PAGO QUE QUIERAS.",
     },
     {
       //! set logistics icon
-      src: "/images/tarjeta-de-credito.svg",
+      src: "/images/camion.svg",
       alt: "logistics-3",
       title:
         "Elegí la forma de entrega que prefieras ¡y listo! Aseguramos tu entrega con Mercado Envíos.",
-      description: " Recibí el producto que esperás",
+      description: "RECIBÍ EL PRODUCTO QUE ESPERÁS.",
     },
   ],
   // aqui agregar nueva array para slider de services

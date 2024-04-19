@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
 import "./NavBar.css";
 import NavigationCheckIn from "../CheckIn/NavigationCheckIn";
 import Search from "../Search/Search";
+import SearchMobile from "../SearchMobile/SearchMobile";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <>
+    <div className="header">
       <div className="headerGlobal">
         <nav className="navbar">
           {/* Menú hamburguesa */}
@@ -44,39 +45,40 @@ const NavBar = () => {
               <Link to="/">Herramientas</Link> {/* Reemplaza href por to */}
             </li>
             <li className="ofertasContainer">
-              <Link to="/" id="ofertas">Ofertas</Link> {/* Reemplaza href por to */}
+              <Link to="/" id="ofertas">
+                Ofertas
+              </Link>{" "}
+              {/* Reemplaza href por to */}
               <img src="/images/fire-icon.svg" alt="fire-icon" />
             </li>
           </ul>
-          
         </nav>
 
         {/* Condición para mostrar o no NavigationCheckIn */}
         {!isOpen && (
-          <div className="navigationCheckInAll">
-            <h1>
-              <Link className="store-title" to="/">
-                Mi Tienda
-              </Link>{" "}
-              {/* Reemplaza href por to */}
-            </h1>
-              <Search/>
-            <div className="iconsHeader">
-
-            <NavigationCheckIn />
-            <Link to="/">
-              <img
-                src="../../../public/images/shopping-cart.svg"
-                alt="cart"
-                />
-            </Link>
-                </div>
-                
-
+          <div className="sarch-header-global">
+            <div className="navigationCheckInAll">
+              <Search />
+              <div className="iconsHeader">
+              <h1>
+                <Link className="store-title" to="/">
+                  Mi Tienda
+                </Link>{" "}
+                {/* Reemplazar href por to */}
+              </h1>
+                <NavigationCheckIn />
+                <Link to="/">
+                  <img src="/images/shopping-cart.svg" alt="cart" />
+                </Link>
+              </div>
+            </div>
           </div>
         )}
       </div>
-    </>
+            <div className="search-header-global-mobile">
+              <SearchMobile/>
+            </div>
+    </div>
   );
 };
 

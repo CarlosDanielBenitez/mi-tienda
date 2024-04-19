@@ -4,7 +4,7 @@ import "./footer.css"; // Archivo de estilos para el Footer
 const Footer = () => {
   return (
     <footer className="footer">
-        <div className="column watch">
+      <div className="column watch">
         <div className="text-section mi-tienda">
           <h1>Mi Tienda</h1>
         </div>
@@ -19,8 +19,8 @@ const Footer = () => {
         </div>
         <div className="image-section-nosotros">
           <h2>Powered by Pierce commerce</h2>
-          <img src="../../../public/images/pierce.svg" alt="pierce" />
-          <img src="../../../public/images/vtex.svg" alt="vtex" />
+          <img src="/images/pierce.svg" alt="pierce" />
+          <img src="/images/vtex.svg" alt="vtex" />
         </div>
       </div>
       <div className="column hidden">
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="column box-data-global">
         <div className="box-sucursales">
-          <img src="../../../public/images/location-icon.svg" alt="location" />
+          <img src="/images/location-icon.svg" alt="location" />
           <p>SUCURSALES</p>
         </div>
         <div className="text-section">
@@ -40,9 +40,24 @@ const Footer = () => {
             <p>La Plata 1900, Buenos Aires, Argentina</p>
           </div>
         </div>
-        <div className="image-section-data">
+        <div className="image-section-data image-section-data-hidden">
           <h2>© 2023 MateuSports</h2>
-          <img src="../../../public/images/fiscal-qr.jfif" alt="QR" />
+          <img src="/images/fiscal-qr.jfif" alt="QR" />
+        </div>
+
+        {/* moble end footer */}
+        <div className="section-data-end-all">
+          <div>
+            <h2>Powered by Pierce commerce</h2>
+            <img src="/images/pierce.svg" alt="pierce" />
+          </div>
+          <div className="image-section-data image-section-data-show">
+            <h2>© 2023 MateuSports</h2>
+            <div className="image-section-data-end">
+              <img src="/images/fiscal-qr.jfif" alt="QR" />
+              <img src="/images/vtex.svg" alt="QR" />
+            </div>
+          </div>
         </div>
       </div>
     </footer>

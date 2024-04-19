@@ -16,7 +16,7 @@ const Home = () => {
       <div className="homeSliderGlobal">
         <SliderCommercial images={SliderData.images} />
       </div>
-      <div  className="homeSliderProductStrends">
+      <div  className="homeSliderProductStrends" id="tendencias">
       <SliderBestSellers products={ProductsData} titulo={"TENDENCIAS"}/>
 
       </div>
@@ -24,27 +24,29 @@ const Home = () => {
         <div className="titulados-containers">
           <h1 className="">VISITÁ LAS CATEGORÍAS MÁS POPULARES</h1>
         </div>
+        <div >
         <SliderCommercial images={SliderData.imgSneaker} />
+        </div>
       </div>
       <div id="masVendidos" className="homeSliderProductsBestSellers">
-        <SliderBestSellers products={ProductsData} titulo={"LAS MAS VENDIDAS"}/>
+        <SliderBestSellers products={ProductsData} titulo={window.innerWidth >= 768 ? "LAS MAS VENDIDAS" : "LOS MAS VENDIDOS"}/>
       </div>
       <div id="homeServicesAlls" className="homeSliderServices">
         <SliderCommercial images={SliderData.services} />
       </div>
       <div className="flex-services">
         <div className="flex-cartera">
-          <img src="../../public/images/bolsa-de-compra.svg" alt="" />
+          <img src="/images/bolsa-de-compra.svg" alt="" />
           <h2>Elegí los productos que vas a comprar.</h2>
           <h3>Si querés más de uno, sumalos a tu carrito.</h3>
         </div>
         <div className="flex-tarjeta">
-          <img src="../../public/images/tarjeta-de-credito.svg" alt="" />
+          <img src="/images/tarjeta-de-credito.svg" alt="" />
           <h2>Pagá con el medio de pago que quieras.</h2>
           <h3>Comprá con seguridad: usamos la tecnología de Mercado Pago.</h3>
         </div>
         <div className="flex-logistica">
-          <img src="../../public/images/bolsa-de-compra.svg" alt="" />
+          <img src="/images/tarjeta-de-credito.svg" alt="" />
           <h2>Recibí el producto que esperás</h2>
           <h3>
             Elegí la forma de entrega que prefieras ¡y listo! Aseguramos tu

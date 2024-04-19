@@ -1,9 +1,42 @@
 /*? NavigationCheckIn */
-.navigationCheckInAll{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-     column-gap: 1rem; 
+.navigationCheckInAll {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.3rem;
+  column-gap: 1rem;
 
-} 
+}
+.icon-user-container {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.icon-user-container p {
+  display: none;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+  font-style: normal;
+  color:#5E5E5E;
+
+}
+
+.icon-user-container p:hover{
+  color: #0f1e7b;
+
+}
+
+.icon-user-global Link {
+  text-decoration: none;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .icon-user-container p {
+    display: block;
+  }
+}

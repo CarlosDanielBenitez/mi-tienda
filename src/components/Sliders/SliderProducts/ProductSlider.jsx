@@ -20,7 +20,7 @@ const ProductSlider = ({ products }) => {
 
   return (
     <div className="product-slider-container">
-      <h1 id="title">TENDENCIAS</h1>
+     
       <div className="product-slider-wrapper">
         {products.map((product, index) => (
           <div

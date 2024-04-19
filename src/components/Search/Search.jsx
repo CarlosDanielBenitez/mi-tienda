@@ -5,7 +5,7 @@ const Search = ({children }) => {
   return (
     <div className="search-container">
       <div className="search-content">{children}</div>
-      <img src="../../../public/images/lupa.svg" alt="Search" className="search-image" />
+      <img src="/images/lupa.svg" alt="Search" className="search-image" />
     </div>
   );
 };

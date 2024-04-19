@@ -17,6 +17,7 @@
   font-family: Roboto;
   font-style: italic;
   padding-left: 1rem;
+
 }
 .menu-icon {
   /*! tener en cuenta en desktop */
@@ -29,6 +30,7 @@
 
 .menu-icon .hamburger-react {
   /* Estilos predeterminados */
+  cursor: pointer;
 }
 
 .menu-icon .hamburger-react.active {
@@ -102,7 +104,6 @@
 
 .headerGlobal {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   width: 100%;
 }
@@ -111,6 +112,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.icon-user-container{
+  display: flex;
 }
 /*? NAVBAR DESKTOP */
 /* Estilos para NavBarLargeScreen */
@@ -121,23 +125,25 @@
   display: flex;
   width: 100%;
   column-gap: .5rem;
-
+align-items: center;
+padding-right: 1.4rem;
 }
 
 /* Estilos para pantallas grandes (768px o más) */
 @media (min-width: 768px) {
   .store-title {
     padding-left: 4rem;
+    padding-right: 4rem;
   }
   .navbar-large {
     display: flex; /* Muestra el NavBar en pantallas grandes */
-    margin-right: 2rem;
 
     justify-content: flex-end;
+    padding-top: .5rem;
   }
   .iconsHeader{
     justify-content: flex-end;
-    margin-right: 3.3rem;
+    margin-right: 1.4rem;
   }
   .nav-links {
     display: flex;
@@ -167,3 +173,12 @@
   list-style: none;
   text-decoration: none;
 }
+
+.sarch-header-global{
+  display: flex;
+  width: 100%;
+  align-items: center;
+flex-wrap: wrap;
+
+}
+
